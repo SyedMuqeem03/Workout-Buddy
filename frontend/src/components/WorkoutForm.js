@@ -17,7 +17,7 @@ const handleSumbit=async(e)=>{
     const workout={title,load,reps}
 
 
-    const response=await fetch('http://localhost:3001/api/workouts',{
+    const response=await fetch('http://192.168.0.121:3001/api/workouts',{
         method:'POST',
         body:JSON.stringify(workout),
         headers:{
