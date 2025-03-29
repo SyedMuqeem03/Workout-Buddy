@@ -66,3 +66,80 @@ header a {
   border-radius: 50%;
   color: #333;
 }
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .home {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .workouts {
+    order: 2;
+  }
+  
+  form.create {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pages {
+    padding: 10px;
+  }
+
+  .workout-details {
+    padding: 15px;
+    margin: 15px auto;
+  }
+  
+  .workout-details h4 {
+    padding-right: 30px; /* Make room for delete icon */
+  }
+  
+  header .container {
+    padding: 10px 15px;
+  }
+}
