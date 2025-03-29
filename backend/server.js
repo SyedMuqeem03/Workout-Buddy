@@ -7,7 +7,12 @@ const workoutRoutes = require('./routes/workouts')
 // express app
 const app = express()
 const cors = require('cors')
-app.use(cors())
+app.use(cors([
+  {
+    origin: 'https://workout-buddy-24yb.vercel.app/',
+    credentials: true,
+  },
+]))
 
 // middleware
 app.use(express.json())
