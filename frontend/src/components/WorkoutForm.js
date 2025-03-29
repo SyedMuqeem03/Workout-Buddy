@@ -17,7 +17,7 @@ const handleSumbit=async(e)=>{
     const workout={title,load,reps}
 
 
-    const response=await fetch('workout-buddy-production-03a9.up.railway.app/api/workouts',{
+    const response=await fetch('https://workout-buddy-production-03a9.up.railway.app/api/workouts',{
         method:'POST',
         body:JSON.stringify(workout),
         headers:{
