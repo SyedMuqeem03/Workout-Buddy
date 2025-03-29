@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('http://192.168.0.121:3001/api/workouts')
+      const response = await fetch('https://192.168.0.121:3001/api/workouts')
       const json = await response.json()
 
 

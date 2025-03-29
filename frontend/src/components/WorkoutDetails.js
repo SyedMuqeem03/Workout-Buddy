@@ -9,7 +9,7 @@ const WorkoutDetails = ({ workout }) => {
 
 
   const handleClick = async () => {
-    const response = await fetch('http://192.168.0.121:3001/api/workouts' + workout._id, {
+    const response = await fetch('https://192.168.0.121:3001/api/workouts' + workout._id, {
       method: 'DELETE'
     })
     const json = await response.json()
