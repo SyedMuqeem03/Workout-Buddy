@@ -2,7 +2,7 @@
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application for tracking your workout activities.
 
-![Workout Buddy Screenshot](screenshots/workout-buddy-screenshot.png)
+![Workout Buddy Screenshot](image.png)
 
 ## Features
 
